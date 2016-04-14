@@ -1,3 +1,8 @@
+execute pathogen#infect()
+
+filetype plugin indent on
+syntax on
+
 " color scheme
 if ! has("gui_running")
     set t_Co=256
