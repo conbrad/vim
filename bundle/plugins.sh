@@ -21,6 +21,9 @@ if [ $1 == "init" ];
     echo "init nerd commenter"
     git clone https://github.com/scrooloose/nerdcommenter.git
 
+    echo "nerd tree tabs"
+    git clone https://github.com/jistr/vim-nerdtree-tabs.git
+
     echo "init yankstack"
     https://github.com/maxbrunsfeld/vim-yankstack.git
 
