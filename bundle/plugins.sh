@@ -12,14 +12,27 @@ if [ $1 == "init" ];
     echo "init scala syntax hiliting"
     git clone https://github.com/derekwyatt/vim-scala
 
+    echo "init airline status bars"
+    git clone https://github.com/vim-airline/vim-airline 
+
+    echo "init nerd tree"
+    git clone https://github.com/scrooloose/nerdtree.git
+
+    echo "init nerd commenter"
+    git clone https://github.com/scrooloose/nerdcommenter.git
+
+    echo "init yankstack"
+    https://github.com/maxbrunsfeld/vim-yankstack.git
+
+    echo "init vim surround"
+    git clone git://github.com/tpope/vim-surround.git
+
 elif [ $1 == "update" ];
-    then echo "update plugin repos";
-
-    echo "update nerd commenter"
-    git pull https://github.com/scrooloose/nerdcommenter
-
-    echo "update scala syntax hiliting"
-    git pull https://github.com/derekwyatt/vim-scala
+    then echo "updating plugins";
+    for i in `ls`; do
+        cd "$i"
+        git pull
+    done
 else
     echo "requires either init or update as parameter"
 fi

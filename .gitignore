@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 *~
 *.swp
 tags
+=======
+# Ignore Vim tag files
+tags
+
+# Ignore Vim swap files
+.*.swp
+.*.swo
+>>>>>>> 16beb5378b487c2ddbdc9ed7241b145cd2df33f4
